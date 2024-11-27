@@ -1,11 +1,12 @@
 #include <string.h>
 #include <Wire.h>
 #include "rgb_lcd.h"
-rgb_lcd lcd;
+
 // attribution des PIN
 int pin_LED_PIETONS = D7 ;
 int pin_BUTTON_PIETONS = D8 ;
 int state = LOW ;
+rgb_lcd lcd; // pour le lcd de la lumière du feu de circulation
 
 class FeuxCirculation{
   private:
